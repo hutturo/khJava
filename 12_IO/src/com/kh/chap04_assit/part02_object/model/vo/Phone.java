@@ -1,6 +1,8 @@
 package com.kh.chap04_assit.part02_object.model.vo;
 
-public class Phone {
+import java.io.Serializable;
+
+public class Phone implements Serializable {
 
     // ÇÊµå
     private String name;
@@ -11,6 +13,7 @@ public class Phone {
     }
 
     public Phone(String name, String brand, int price) {
+        super();
         this.name = name;
         this.brand = brand;
         this.price = price;
