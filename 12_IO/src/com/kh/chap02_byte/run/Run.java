@@ -21,7 +21,10 @@ public class Run {
 		// Piped InputStream/OutputStream		--> 외부매체로 또다른 프로그램!!
 		
 		FileByteTest fb = new FileByteTest();
-		fb.fileSave();
+//		fb.fileSave();
+		fb.fileRead();
+
+//		System.out.println((int)'강');
 
 	}
 

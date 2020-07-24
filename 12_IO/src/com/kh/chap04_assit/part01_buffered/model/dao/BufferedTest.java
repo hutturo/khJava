@@ -1,0 +1,63 @@
+package com.kh.chap04_assit.part01_buffered.model.dao;
+
+import java.io.*;
+
+public class BufferedTest {
+
+    // 프로그램 --> 파일 (출력)
+    public void fileSave() {
+
+        // 1. 기반스트림 먼저 생성 (어떤 "외부매체"와 데이터를 주고받을 것인지 선택해주는 기반 스트림 객체 먼저생성!!)
+//        FileWriter fw = new FileWriter("c_buffer.dat");
+
+        // 보조스트림 생성 (해당 기반스트림객체를 담은 채로 생성)
+//        BufferedWriter bw = new BufferedWriter(fw);
+
+        // 위의 과정을 한줄로 줄여보자!
+        try (BufferedWriter bw = new BufferedWriter(new FileWriter("c_buffer.dat"))) {
+
+            // 데이터 출력 : write()
+            bw.write("안녕하세요\n");
+            bw.write("반갑습니다.");
+            // 버퍼라는 공간에 계속 쌓다가 한번에 출력 시킴 --> 속도 향상에 좋다.
+
+            bw.newLine();   // 기반스트림에서 제공하지 않는 메소드도 제공
+            bw.write("저리가세요.");
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+    }
+
+    public void fileRead() {
+
+        // BufferedReader 객체 생성
+        try (BufferedReader br = new BufferedReader(new FileReader("c_buffer.dat"))) {
+
+            /*
+            System.out.println(br.readLine());  // 한 줄 단위로 읽어들임
+            System.out.println(br.readLine());
+            System.out.println(br.readLine());
+            System.out.println(br.readLine());
+            // 파일의 끝을 만나는 순간 null을 반환
+            */
+
+            /*
+            while (br.readLine() != null) {
+                System.out.println(br.readLine());
+            }
+            */
+
+            String value = null;
+            while ((value = br.readLine()) != null) {
+                System.out.println(value);
+            }
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+    }
+
+}

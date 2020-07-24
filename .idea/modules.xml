@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/00_myFirstProject/00_myFirstProject.iml" filepath="$PROJECT_DIR$/00_myFirstProject/00_myFirstProject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/01_Variable/01_Variable.iml" filepath="$PROJECT_DIR$/01_Variable/01_Variable.iml" />
+      <module fileurl="file://$PROJECT_DIR$/02_Operator/02_Operator.iml" filepath="$PROJECT_DIR$/02_Operator/02_Operator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/03_Control/03_Control.iml" filepath="$PROJECT_DIR$/03_Control/03_Control.iml" />
+      <module fileurl="file://$PROJECT_DIR$/03_Total_Homework_Answer/03_Total_Homework_Answer.iml" filepath="$PROJECT_DIR$/03_Total_Homework_Answer/03_Total_Homework_Answer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/04_Array/04_Array.iml" filepath="$PROJECT_DIR$/04_Array/04_Array.iml" />
+      <module fileurl="file://$PROJECT_DIR$/05_DimentionalArray/05_DimentionalArray.iml" filepath="$PROJECT_DIR$/05_DimentionalArray/05_DimentionalArray.iml" />
+      <module fileurl="file://$PROJECT_DIR$/06_Object/06_Object.iml" filepath="$PROJECT_DIR$/06_Object/06_Object.iml" />
+      <module fileurl="file://$PROJECT_DIR$/07_ObjectArray/07_ObjectArray.iml" filepath="$PROJECT_DIR$/07_ObjectArray/07_ObjectArray.iml" />
+      <module fileurl="file://$PROJECT_DIR$/07_ObjectArray_Homework_Answer/07_ObjectArray_Homework_Answer.iml" filepath="$PROJECT_DIR$/07_ObjectArray_Homework_Answer/07_ObjectArray_Homework_Answer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/08_Inheritance/08_Inheritance.iml" filepath="$PROJECT_DIR$/08_Inheritance/08_Inheritance.iml" />
+      <module fileurl="file://$PROJECT_DIR$/09_Polymorphism/09_Polymorphism.iml" filepath="$PROJECT_DIR$/09_Polymorphism/09_Polymorphism.iml" />
+      <module fileurl="file://$PROJECT_DIR$/09_Polymorphism_Homework_Answer/09_Polymorphism_Homework_Answer.iml" filepath="$PROJECT_DIR$/09_Polymorphism_Homework_Answer/09_Polymorphism_Homework_Answer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/10_API/10_API.iml" filepath="$PROJECT_DIR$/10_API/10_API.iml" />
+      <module fileurl="file://$PROJECT_DIR$/10_API_Homework_Answer/10_API_Homework_Answer.iml" filepath="$PROJECT_DIR$/10_API_Homework_Answer/10_API_Homework_Answer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/11_Exception/11_Exception.iml" filepath="$PROJECT_DIR$/11_Exception/11_Exception.iml" />
+      <module fileurl="file://$PROJECT_DIR$/12_IO/12_IO.iml" filepath="$PROJECT_DIR$/12_IO/12_IO.iml" />
+    </modules>
+  </component>
+</project>
