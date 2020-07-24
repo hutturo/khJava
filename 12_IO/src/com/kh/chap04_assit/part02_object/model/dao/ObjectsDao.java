@@ -2,10 +2,7 @@ package com.kh.chap04_assit.part02_object.model.dao;
 
 import com.kh.chap04_assit.part02_object.model.vo.Phone;
 
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.ObjectOutputStream;
+import java.io.*;
 
 public class ObjectsDao {
 
@@ -34,6 +31,38 @@ public class ObjectsDao {
             }
 
         } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+    }
+
+    // 프로그램 <-- 파일 (입력)
+    public void fileRead() {
+
+        // 파일에 기록된 데이터를 객체단위로 입력받아올 때 필요한 스트림
+        // ObjectInputStream : 객체단위로 입력받을 수 있는 보조 바이트 스트림
+        // FileInputStream   : 파일과 직접적으로 연결해서 데이터 입력 받을 수 있는 기반 바이트 스트림
+
+        try (ObjectInputStream ois = new ObjectInputStream(new FileInputStream("phones.dat"))) {
+
+            /*
+            System.out.println(ois.readObject());
+            System.out.println(ois.readObject());
+            System.out.println(ois.readObject());
+            */
+
+            // 파일의 끝을 만났을 때
+            // read() : -1을 반환
+            // readLine() : null 반환
+            // readObject() : EOFException  (EOF : End Of File)
+
+            while (true) {
+                System.out.println(ois.readObject());
+            }
+
+        } catch (EOFException e) {
+            System.out.println("파일을 다 읽었습니다.");
+        } catch (IOException | ClassNotFoundException e) {
             e.printStackTrace();
         }
 
